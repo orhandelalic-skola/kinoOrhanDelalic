@@ -119,3 +119,45 @@ section h2 {
 .nedostupno .trajanje {
   color: #e0e0e0;
 }
+
+
+
+
+@media (min-width: 1080px) {
+  .grid-filmova {
+    grid-template-columns: repeat(5, 200px);
+  }
+}
+ 
+@media (min-width: 800px) and (max-width: 1079px) {
+  .grid-filmova {
+    grid-template-columns: repeat(3, 200px);
+  }
+}
+ 
+@media (min-width: 300px) and (max-width: 799px) {
+  .grid-filmova {
+    grid-template-columns: repeat(auto-fill, 200px);
+  }
+}
+ 
+@media (max-width: 299px) {
+  .grid-filmova {
+    grid-template-columns: 1fr;
+  }
+  .film {
+    width: 100%;
+  }
+}
+ 
+@media (max-width: 450px) {
+  #glavni-meni ul {
+    flex-direction: column;
+  }
+  header {
+    position: static;
+  }
+  main {
+    margin-top: 0;
+  }
+}
