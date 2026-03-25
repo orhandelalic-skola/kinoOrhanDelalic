@@ -4,6 +4,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 1000;
+  background-color: #1a1a1a;
 }
 
 #glavni-meni ul {
@@ -12,4 +13,14 @@ header {
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 0;
+}
+
+#glavni-meni ul li a {
+  display: block;
+  padding: 16px 24px;
+  color: #f0f0f0;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
 }
