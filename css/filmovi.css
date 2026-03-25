@@ -39,6 +39,12 @@ header {
   letter-spacing: 0.05em;
 }
 
+#glavni-meni ul li a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+
 main {
   margin-top: 55px; /* visina headera */
   padding: 30px 20px 40px 20px;
@@ -46,7 +52,6 @@ main {
   margin-left: auto;
   margin-right: auto;
 }
-
 
 section {
   margin-bottom: 40px;
@@ -80,6 +85,12 @@ section h2 {
   padding: 8px;
   font-family: Arial, sans-serif;
   font-size: 0.85rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.film:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
 .film .poster {
