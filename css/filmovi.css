@@ -67,9 +67,10 @@ section h2 {
 }
  
 .grid-filmova {
+  --gap: clamp(10px, 2vw, 30px);
   display: grid;
   grid-template-columns: repeat(auto-fill, 200px);
-  gap: 10px;
+  gap: var(--gap);
   justify-content: center;
 }
  
