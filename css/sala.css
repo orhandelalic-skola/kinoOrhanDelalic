@@ -109,6 +109,12 @@ main {
   gap: 10px;
 }
 
+.sjediste {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #888;
+}
+
 
 #legenda {
   display: flex;
