@@ -91,6 +91,18 @@ main {
   margin-right: auto;
 }
 
+.legenda-stavka {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+ 
+.uzorak {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #888;
+  flex-shrink: 0;
+}
 
 @media (max-width: 450px) {
   #glavni-meni ul {
