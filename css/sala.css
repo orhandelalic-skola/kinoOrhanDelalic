@@ -168,3 +168,17 @@ main {
     margin-top: 0;
   }
 }
+
+@media (max-width: 500px) {
+  .sjedista {
+    grid-template-columns: repeat(10, 22px);
+    gap: 6px;
+  }
+  .sjediste {
+    width: 22px;
+    height: 22px;
+  }
+  .red {
+    gap: 6px;
+  }
+}
