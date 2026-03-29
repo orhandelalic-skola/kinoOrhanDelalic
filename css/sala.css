@@ -104,6 +104,18 @@ main {
   flex-shrink: 0;
 }
 
+.slobodno {
+  background-color: green;
+}
+ 
+.zauzeto {
+  background-color: red;
+}
+ 
+.rezervisano {
+  background-color: gray;
+}
+
 @media (max-width: 450px) {
   #glavni-meni ul {
     flex-direction: column;
