@@ -77,6 +77,39 @@ main {
 }
 
 
+#sala {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 28px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+ 
+.red {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+ 
+.oznaka-reda {
+  font-family: Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+  width: 16px;
+  text-align: center;
+  flex-shrink: 0;
+}
+ 
+.sjedista {
+  display: grid;
+  grid-template-columns: repeat(10, 28px);
+  gap: 10px;
+}
+
+
 #legenda {
   display: flex;
   flex-direction: row;
@@ -104,6 +137,7 @@ main {
   flex-shrink: 0;
 }
 
+
 .slobodno {
   background-color: green;
 }
@@ -115,6 +149,7 @@ main {
 .rezervisano {
   background-color: gray;
 }
+
 
 @media (max-width: 450px) {
   #glavni-meni ul {
