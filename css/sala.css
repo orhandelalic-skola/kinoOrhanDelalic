@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, serif;
+  background-color: #f5f5f5;
+  color: #222;
+  min-width: 300px;
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #1a1a1a;
+}
+
+#glavni-meni ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0;
+}
+
+#glavni-meni ul li a {
+  display: block;
+  padding: 16px 24px;
+  color: #f0f0f0;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+}
+
+#glavni-meni ul li a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+main {
+  margin-top: 55px; /* visina headera */
+  padding: 30px 20px 40px 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media (max-width: 450px) {
+  #glavni-meni ul {
+    flex-direction: column;
+  }
+  header {
+    position: static;
+  }
+  main {
+    margin-top: 0;
+  }
+}

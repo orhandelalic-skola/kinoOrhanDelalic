@@ -44,7 +44,6 @@ header {
   color: #fff;
 }
 
-
 main {
   margin-top: 55px; /* visina headera */
   padding: 30px 20px 40px 20px;
@@ -52,6 +51,7 @@ main {
   margin-left: auto;
   margin-right: auto;
 }
+
 
 section {
   margin-bottom: 40px;
@@ -160,7 +160,8 @@ section h2 {
     width: 100%;
   }
 }
- 
+
+
 @media (max-width: 450px) {
   #glavni-meni ul {
     flex-direction: column;
