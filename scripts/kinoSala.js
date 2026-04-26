@@ -95,6 +95,12 @@ function init() {
     return;
   }
 
+  podaci.projekcije.sort(function(a, b) {
+    if (a.vrijeme < b.vrijeme) return -1;
+    if (a.vrijeme > b.vrijeme) return 1;
+    return a.sala - b.sala;
+  });
+
   document.getElementById("btn-prethodna").addEventListener("click", function() {
     if (trenutnaProjekcija > 0) {
       trenutnaProjekcija--;
