@@ -11,7 +11,6 @@ body {
   min-width: 300px;
 }
 
-
 header {
   position: fixed;
   top: 0;
@@ -52,6 +51,18 @@ main {
   margin-right: auto;
 }
 
+@media (max-width: 450px) {
+  #glavni-meni ul {
+    flex-direction: column;
+  }
+  header {
+    position: static;
+  }
+  main {
+    margin-top: 0;
+  }
+}
+
 
 #info-projekcije {
   margin-bottom: 24px;
@@ -59,11 +70,11 @@ main {
   font-size: 0.95rem;
   line-height: 1.8;
 }
- 
+
 #info-projekcije strong {
   font-weight: bold;
 }
- 
+
 #platno {
   background-color: #1a1a1a;
   color: #f0f0f0;
@@ -76,7 +87,6 @@ main {
   margin-bottom: 28px;
 }
 
-
 #sala {
   display: flex;
   flex-direction: column;
@@ -86,14 +96,14 @@ main {
   margin-left: auto;
   margin-right: auto;
 }
- 
+
 .red {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
 }
- 
+
 .oznaka-reda {
   font-family: Arial, sans-serif;
   font-size: 0.8rem;
@@ -102,7 +112,7 @@ main {
   text-align: center;
   flex-shrink: 0;
 }
- 
+
 .sjedista {
   display: grid;
   grid-template-columns: repeat(10, 28px);
@@ -121,6 +131,17 @@ main {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
+.slobodno {
+  background-color: green;
+}
+
+.zauzeto {
+  background-color: red;
+}
+
+.rezervisano {
+  background-color: gray;
+}
 
 #legenda {
   display: flex;
@@ -141,38 +162,12 @@ main {
   align-items: center;
   gap: 8px;
 }
- 
+
 .uzorak {
   width: 16px;
   height: 16px;
   border: 1px solid #888;
   flex-shrink: 0;
-}
-
-
-.slobodno {
-  background-color: green;
-}
- 
-.zauzeto {
-  background-color: red;
-}
- 
-.rezervisano {
-  background-color: gray;
-}
-
-
-@media (max-width: 450px) {
-  #glavni-meni ul {
-    flex-direction: column;
-  }
-  header {
-    position: static;
-  }
-  main {
-    margin-top: 0;
-  }
 }
 
 @media (max-width: 500px) {
@@ -187,4 +182,42 @@ main {
   .red {
     gap: 6px;
   }
+}
+
+
+#navigacija {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-family: Arial, sans-serif;
+}
+
+#navigacija button {
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+}
+
+#navigacija button:hover:not(:disabled) {
+  background-color: #333;
+}
+
+#navigacija button:disabled {
+  background-color: #aaa;
+  cursor: default;
+}
+
+#greska {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  color: red;
+  text-align: center;
+  margin-top: 40px;
 }
