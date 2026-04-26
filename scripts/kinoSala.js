@@ -82,10 +82,19 @@ function napraviSjediste(sjediste, projekcija) {
   return div;
 }
 
+function azurirajDugmad() {
+  var btnPrethodna = document.getElementById("btn-prethodna");
+  var btnSljedeca = document.getElementById("btn-sljedeca");
+
+  btnPrethodna.disabled = trenutnaProjekcija === 0;
+  btnSljedeca.disabled = trenutnaProjekcija === podaci.projekcije.length - 1;
+}
+
 function prikaziProjekciju(indeks) {
   var projekcija = podaci.projekcije[indeks];
   prikaziInfo(projekcija);
   prikaziSalu(projekcija);
+  azurirajDugmad();
 }
 
 function init() {
