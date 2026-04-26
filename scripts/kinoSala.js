@@ -20,4 +20,12 @@ function validirajPodatke(podaci) {
   return true;
 }
 
+function init() {
+  if (!validirajPodatke(podaci)) {
+    var main = document.querySelector("main");
+    main.innerHTML = "<p id='greska'>Podaci nisu validni!</p>";
+    return;
+  }
+}
+
 document.addEventListener("DOMContentLoaded", init);
